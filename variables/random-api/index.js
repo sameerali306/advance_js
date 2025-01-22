@@ -2,7 +2,7 @@ const URL = "https://randomuser.me/api/?results=50";
 const btn = document.getElementById("btn");
 const genderButtonsContainer = document.getElementById("gender-buttons");
 const goBackButtonContainer = document.getElementById("go-back-btn");
-const profile=document.getElementById("view-profile")
+const profile = document.getElementById("view-profile");
 
 let allUsers = [];
 let originalUsers = [];
@@ -50,14 +50,33 @@ const displayUsers = (users) => {
     users.forEach((item, index) => {
         allCardsHTML += `
             <div class="card" id="${item.id.value}" key="${index}">
-            <p>Gender:${item.gender}</p>
                 <p>Name: ${item.name.first} ${item.name.last}</p>
-                <p>Location:${item.location.country} ${item.location.city}</p>
                 <img src="${item.picture.large}" alt="${item.name.first} ${item.name.last}">
-
+                <button onclick="viewProfile(${index})">View Profile</button>
             </div>`;
     });
     facts.innerHTML = allCardsHTML;
+};
+
+const viewProfile = (index) => {
+    const user = allUsers[index];
+    const profileHTML = `
+        <div class="profile-card">
+            <p>Name: ${user.name.first} ${user.name.last}</p>
+            <p>Gender: ${user.gender}</p>
+            <p>Location: ${user.location.city}, ${user.location.country}</p>
+            <img src="${user.picture.large}" alt="${user.name.first} ${user.name.last}">
+            <button onclick="closeProfile()">Close Profile</button>
+        </div>
+    `;
+    profile.innerHTML = profileHTML;
+    profile.style.display = "block"; // Show the profile view
+    document.getElementById("facts").style.display = "none"; // Hide the main user list
+};
+
+const closeProfile = () => {
+    profile.style.display = "none"; // Hide the profile view
+    document.getElementById("facts").style.display = "block"; // Show the user list
 };
 
 const showGoBackButton = () => {

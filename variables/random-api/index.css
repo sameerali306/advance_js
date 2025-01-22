@@ -61,7 +61,7 @@
 
    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
    /* General styling for the page */
-body {
+ body { 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -104,7 +104,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-#gender-buttons button:hover, #go-back-btn button:hover {
+#gender-buttons button:hover, #go-back-btn button:hover { */
     background-color: #0056b3;
 }
 
@@ -146,6 +146,7 @@ body {
 /* Styling for the text inside the cards */
 .card p {
     margin: 5px 0;
+    font-weight: 800;
 }
 body {
     font-family: Arial, sans-serif;
@@ -178,8 +179,8 @@ body {
 }
 
 /* Styling for each gender filter and "Go Back" button */
-#gender-buttons button, #go-back-btn button {
-    /* background-color: #007BFF; */
+#gender-buttons button, #go-back-bt button {
+    background-color: #007BFF;/
     color: white;
     border: none;
     padding: 10px 20px;
@@ -227,6 +228,7 @@ body {
     height: 100px;
     object-fit: cover;
     margin-bottom: 15px;
+    
 }
 
 /* Styling for the text inside the cards */
@@ -234,7 +236,7 @@ body {
     margin: 5px 0;
 }
 .card button{
-    background-color: #007BFF;
+    background-color:#45a049;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -243,4 +245,20 @@ body {
     margin: 5px;
     border-radius: 5px;
     transition: b
+}
+/* Profile Container */
+.profile-card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.closeProfile{
+    background-color: #0056b3;
 }
