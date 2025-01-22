@@ -1,0 +1,4 @@
+let percentage=60 %;
+
+
+

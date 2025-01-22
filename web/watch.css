@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+.cantainer{
+    text-align: center;
+    margin-left: 27%;
+    width: 440px;
+    border: 2px solid white;
+    margin-top: -3px;
+    padding: 22px;
+}
+h1{
+    color: yellow;
+    text-align: center;
+    font-size: 38px;
+}
+.num{
+    display: flex;
+    color: white;
+    margin-left: 10px;
+
+}
+h2{
+    font-size: 60px;
+    margin-inline: 7px;
+}
+button{
+    width: 100px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-inline: 8px;
+    cursor: pointer;
+}
+button:hover{
+    border: 2px solid white;
+}

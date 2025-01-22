@@ -1,0 +1,16 @@
+.cantainer img{
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    /* filter: blur(5px); */
+    /* filter:brightness(0.6) ; */
+    /* filter: contrast(2); */
+    /* filter: drop-shadow(10px); */
+    /* filter: grayscale(); */
+    /* filter: hue-rotate(30deg); */
+    /* filter: invert(); */
+    /* filter: opacity(); */
+    /* filter: saturate(); */
+    /* filter: sepia(678); */
+    /* filter: url(89%); */
+}

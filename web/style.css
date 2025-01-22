@@ -1,0 +1,136 @@
+.flexcantainer{
+    display: flex;
+    border: 2px solid;
+    padding: 20px;
+    gap: 20px;
+    width: 1000px;
+      flex-wrap: wrap; */ */
+}
+.item1{
+    width: 300px;
+    border: 2px solid;
+    height: auto;
+    
+}
+.item1 img{
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+}
+.item1 h1{
+    padding: 10px;
+    
+    
+}
+.item1 p{
+    padding: 10px;
+}
+.item1 button{
+    padding: 10px;
+    background-color: purple;
+    margin: 20px;
+    width: 250px;
+}
+.item2{
+    border: 2px solid;
+    width: 300px;
+}
+.item2 img{
+    width: 100%;
+}
+.item2 h1{
+    padding: 10px;
+}
+.item2 p{
+    padding: 10px;
+}
+.item2 button{
+      padding: 10px;  
+    margin: 20px;
+    width: 250px;
+    background-color: purple;
+}
+.item3{
+    border: 2px solid;
+    width: 300px;
+}
+.item3 img{
+    width: 100%;
+    height: 185px;
+
+}
+.item3 h1{
+    padding: 10px;
+}
+.item3 p{
+    padding: 10px;
+}
+.item3 button{
+    padding: 10px;
+    margin: 20px;
+    width: 250px;
+    background-color: purple;
+}
+.item4{
+    border: 2px solid;
+    width: 300px;
+    /* flex-wrap: nowrap;/ */
+    /* height: 185PX; */
+}
+.item4 img{
+    width: 100%;
+    height: 185px;
+}
+.item4 h1{
+    padding: 10px;
+
+}
+.item4 p{
+    padding: 10px;
+}
+.item4 button{
+    padding: 10px;
+    margin: 20px;
+    width: 250px;
+    background-color: purple;
+}
+.item5{
+    border: 2px solid;
+    width: 300px;
+}
+.item5 img{
+    width: 100%;
+    height: 185px;
+}
+.item5 h1{
+    padding: 10px;
+}
+.item5 p{
+    padding: 10px;
+}
+.item5 button{
+    padding: 10px;
+    margin: 20px;
+    width: 250px;
+    background-color: purple;
+}
+.item6{
+    border: 2px solid;
+    width: 300px;
+}
+.item6 img{
+    width: 100%;
+    height: 185px;
+}
+.item6 h1{
+    padding: 10px;
+}
+.item6 p{
+    padding: 10px;
+}
+.item6 button{
+    padding: 10px;
+    margin: 20px;
+    width: 250px;
+    background-color: purple;
+}

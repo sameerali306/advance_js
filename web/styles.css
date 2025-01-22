@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* width: 440px; */
+}
+.cantainer{
+    display: grid;
+    display: flex/;
+    width: 100%;
+    /* border: 2px solid; */
+    /* grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 50px 500px 100px 100px 100px 120px 120px ;
+    margin: 20px;
+    padding: 20px;
+}
+.cantainer a{
+    color: black;
+}
+.cantainer img{
+    width: 50px;
+}
+.cantainer button{
+    /* padding: 10px; */
+    background-color: yellowgreen;
+    /* margin: 10px; */
+    width: 100px;
+    height: 40px;
+}
+.main{
+    background-color: olive;
+    height: 200px;
+    width: 1140px;
+    height: auto;
+    margin: 20px;
+    padding: 20px 20px 20px ;
+    display: grid;
+    grid-template-columns: 700PX 900PX;
+}
+.main1 h1{
+    color: white;
+    padding: 20px
+    
+}
+.main1 p{
+    color: white;
+    padding: 0px;
+    
+
+}
+.main img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin: 0px 150px;
+}
+.innermain{
+    width: 1000px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    display: grid;
+}
+.middle{
+    /* display: flex; */
+    /* justify-content: center; */
+ margin: 20px; 
+    padding: 10px; 
+    /* display: grid; */
+    /* grid-template-columns: 10 ; */
+    /* border: 2px solid; */
+    width: 1140px;
+    display: flex;
+    gap: 40px;
+
+}
+.middle1 img{
+    width: 130px;
+    padding: 10px;
+    /* grid-template-columns: 1fr 1fr; */
+    border-radius: 100px;
+    
+}
+.middle1 p{
+    width: 200px;
+    padding: 10px;
+}
+.middle h1{
+    width: 300px;
+    padding: 10px;
+}
+.innermiddle p{
+    width: 200px;
+    padding: 10px;
+}
+.middle2{
+
+}
+.innermiddle img{
+    width: 100px;
+    border-radius: 100px;
+    
+}
+.middle3 img{
+    width: 100px;
+    border-radius: 100px;
+    margin: 15px;
+    padding: 10PX;
+}
+.middle3 p{
+    width: 200px;
+}
+.middle4 img{
+    width: 100px;
+    border-radius: 100px;
+    margin: 15px;
+    padding: 10PX;
+}
+.middle4 p{
+    width: 200px;
+}
+.middle5 img{
+    width: 150px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 15px;
+}
+ .middle5 p{
+    width: 100px;
+    /* padding: 10px; */
+ }
+ .centre{
+    margin: 20px;
+    /* border: 2px solid; */
+    padding: 10px;
+     display: flex; 
+     /* justify-content: center; */
+     justify-content: space-between;
+ }
+ .centre h1{
+    margin: 10px;
+    display: flex;
+    /* justify-content: center; */
+ }
+ .outercentre button{
+    /* padding: 20px; */
+    width: 50px;
+    margin: 0px 20px;
+    background-color: green;
+ }
+ .last{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+ }
+ .last img{
+    height: 200px;
+    width: 200px;
+    animation-name: sameer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+
+ }
+ .end{
+    margin: 0px 0px 0px 20px;
+    /* display: flex; */
+     width: 1140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+ @keyframes sameer{
+    0%{
+        background-image: url(best\ photo.jpeg);
+    }
+    25%{
+        background-image: url(css\ property.jpg);
+    }
+    50%{
+        background-image: url(nice.jpeg);
+    }
+    75%{
+        background-image: url();
+    }
+    100%{
+        background-image: url();
+    }
+ }
