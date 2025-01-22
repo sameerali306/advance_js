@@ -2,6 +2,7 @@ const URL = "https://randomuser.me/api/?results=50";
 const btn = document.getElementById("btn");
 const genderButtonsContainer = document.getElementById("gender-buttons");
 const goBackButtonContainer = document.getElementById("go-back-btn");
+const profile=document.getElementById("view-profile")
 
 let allUsers = [];
 let originalUsers = [];
@@ -52,9 +53,8 @@ const displayUsers = (users) => {
             <p>Gender:${item.gender}</p>
                 <p>Name: ${item.name.first} ${item.name.last}</p>
                 <p>Location:${item.location.country} ${item.location.city}</p>
-                
-
                 <img src="${item.picture.large}" alt="${item.name.first} ${item.name.last}">
+
             </div>`;
     });
     facts.innerHTML = allCardsHTML;
