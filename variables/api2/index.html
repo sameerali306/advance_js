@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .cards {
+      display: inline-block;
+    width: 26%;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px 20px;
+      
+    }
+    button {
+      padding: 9px;
+    font-size: 17px;
+    #loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    }
+  </style>
+  <body>
+    <center>
+      <h3>posts</h3>
+      <div id="loader" style="display:none;">loading</div>
+      <div class="spinner"></div>
+    
+      <button id="fetch_posts">fetch posts</button>
+        
+      </div>
+      <div id="post_container"></div>
+      <div id="post_detail"></div>
+    </center>
+    <script src="index.js"></script>
+  </body>
+</html>
