@@ -1,5 +1,4 @@
 const url = https://api.openweathermap.org/data/2.5/weather?
-const key=lat=44.34&lon=10.99&appid={API key}
 const factpara = document.getElementById("facts");
 
 const getFacts = async () => {
