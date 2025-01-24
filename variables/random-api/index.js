@@ -62,21 +62,26 @@ const viewProfile = (index) => {
     const user = allUsers[index];
     const profileHTML = `
         <div class="profile-card">
+        <h1>Title:${user.title.gender}</h1>
             <p>Name: ${user.name.first} ${user.name.last}</p>
             <p>Gender: ${user.gender}</p>
             <p>Location: ${user.location.city}, ${user.location.country}</p>
+            <p>Email:${user.email}
             <img src="${user.picture.large}" alt="${user.name.first} ${user.name.last}">
-            <button onclick="closeProfile()">Close Profile</button>
+            <button onclick="closeProfile()" class="close">Close Profile</button>
         </div>
     `;
     profile.innerHTML = profileHTML;
     profile.style.display = "block"; // Show the profile view
     document.getElementById("facts").style.display = "none"; // Hide the main user list
+    showGoBackButton()
+
 };
 
 const closeProfile = () => {
     profile.style.display = "none"; // Hide the profile view
     document.getElementById("facts").style.display = "block"; // Show the user list
+    
 };
 
 const showGoBackButton = () => {
